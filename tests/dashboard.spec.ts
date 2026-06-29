@@ -17,7 +17,7 @@ test.beforeEach(async ({ page }) => {
 
 test('should show dashboard overview', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Overview' })).toBeVisible();
-  await expect(page.getByText('Total Clients')).toBeVisible();
+  await expect(page.getByText('Total Revenue')).toBeVisible();
   await expect(page.getByText('Active Sessions')).toBeVisible();
   await expect(page.getByText('Reports Generated')).toBeVisible();
 });
